@@ -1,4 +1,4 @@
-<nav>
+<nav class="menu">
   <ul>
     <?php foreach($site->children() as $child): ?>
     <li>
