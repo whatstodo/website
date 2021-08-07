@@ -1,0 +1,7 @@
+title: Participants
+permissions:
+  access:
+    panel: false
+    site: false
+    settings: false
+    users: false

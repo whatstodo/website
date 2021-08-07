@@ -1,0 +1,8 @@
+title: Info
+preset: none
+
+fields:
+  text:
+    label: Text
+    type: textarea
+    size: large

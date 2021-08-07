@@ -1,0 +1,16 @@
+title: Position
+preset: none
+
+fields:
+  declaration:
+    label: Deklaration
+    type: textarea
+    size: medium
+  implementation:
+    label: Umsetzung
+    type: textarea
+    size: medium
+  references:
+    label: Referenzen
+    type: textarea
+    size: medium

@@ -1,0 +1,25 @@
+Title: Gender neutral pay
+
+----
+
+Slug: gender-neutral-pay
+
+----
+
+Declaration: Women earn on average 21% less than their male colleagues in the same position. A gender pay gap also exists in the design industry, depending on the profession and position, this averages between 6 and 18 per cent. That is why we are committed to paying equal wages. Both in employment and in freelance cooperation, gender must not play a role in wages.
+
+----
+
+Implementation:
+
+- Equal pay regardless of gender.
+- Equal conditions regardless of gender.
+- Disclosure of all salaries.
+
+----
+
+References:
+
+- Federal Statistical Office - Gender Pay Gap
+- Narrow the Gab - Woman Designers
+- (link: https://www.designweek.co.uk/issues/3-8-april-2018/women-graphic-designers-earn-4000-less-year-men-gender-pay-gap-shows/ text: Designweek - Gender pay gap)

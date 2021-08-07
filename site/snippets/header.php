@@ -5,7 +5,7 @@ $entry = "templates/$template/index.js";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,4 +18,5 @@ $entry = "templates/$template/index.js";
   <?= vite()->css($entry) ?>
 </head>
 <body>
-  <?php snippet('menu') ?>
+
+<?php snippet('menu') ?>

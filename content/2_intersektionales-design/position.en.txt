@@ -1,0 +1,23 @@
+Title: Intersectional design
+
+----
+
+Declaration: Intersectionality is the most important term for addressing social problems. In every power gradient, forms of discrimination overlap: Anti-feminism, anti-Semitism, homo- and transphobia, classism, racism, sexism and all other forms of discrimination are closely related and never appear alone. Many people suffer greatly from multiple forms of discrimination that need to be considered in a direct context. As designers, we usually negotiate content that is socially relevant in different ways. Addressing societal problems therefore also plays a role in our design and brings with it a responsibility. The topic of intersectionality must therefore have an influence on our design and its process!
+
+----
+
+Implementation:
+
+Intersectionality should be visible in all projects. This is not about generalising solutions, but about raising awareness. In order to raise awareness among both designers and project partners, the following questions need to be asked:
+
+- Which social problems play a role in the project?
+- Have affected groups been heard?
+- Are affected groups involved in the project?
+- How are groups of people and issues presented in the project?
+- Is the project accessible to affected groups?
+- Who has access to the project in general?
+- Basically, the theory of intersectionality is described in a much more complex way here, a deeper research is recommended!
+
+----
+
+References: - Extinction Rebellion on the creative industries – It’s nice that

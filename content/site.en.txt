@@ -1,0 +1,89 @@
+Addpositionhint: Write a new post! By posting, you automatically sign this, agree to whatstodo's self-image and confirm that you follow our howtodo.
+
+----
+
+Addpositionsuccess: Thank you for your message. We will get back to you soon!
+
+----
+
+Addpositionfail: Please fill in all fields!
+
+----
+
+Titel: Titel
+
+----
+
+Name: Name
+
+----
+
+Mail: Email
+
+----
+
+Comment: Comment (Optional)
+
+----
+
+Submit: Submit position
+
+----
+
+Declaration: Declaration
+
+----
+
+Implementation: Implementation
+
+----
+
+References: References
+
+----
+
+Sign: Sign Position!
+
+----
+
+Signing: Signed by
+
+----
+
+Notes: Notes
+
+----
+
+Description: 
+
+----
+
+Keywords: 
+
+----
+
+Addposition-success: asdasd
+
+----
+
+Addposition-fail: asdsad
+
+----
+
+Addposition-hint: fsdfds
+
+----
+
+Newposition-hint: Write a new post! By posting, you automatically sign this, agree to whatstodo's self-image and confirm that you follow our howtodo.
+
+----
+
+Newposition-success: Thank you for your message. We will get back to you soon!
+
+----
+
+Newposition-fail: Please fill in all fields!
+
+----
+
+Beispiel: 

@@ -1,4 +1,47 @@
-.menu {
-  color: purple;
-  font-size: 20pt;
+.menu,
+.search,
+.languages {
+	font-size: 1rem;
+	display: inline;
+	margin-bottom: 2rem;
+}
+
+h1 {
+	font-size: 1rem;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul,
+.search ul,
+.languages ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+.menu li,
+.search li,
+.languages li {
+	display: inline;
+	margin: 0 1rem;
+}
+
+.search,
+.languages {
+	float: right;
+}
+
+.menu li:first-of-type {
+	margin-left: 0;
+}
+
+.languages li {
+	margin: 0 0rem;
+}
+
+.languages li:first-of-type::after {
+	content: "/";
 }

@@ -1,0 +1,149 @@
+title: Site
+
+tabs: 
+  positions:
+    label: Positionen
+    preset: pages
+    listed: true
+    drafts: true
+    unlisted: false
+
+
+  pages:
+    label: Allgemeine Seiten
+    preset: pages
+    unlisted: true
+    listed: false
+    drafts: false
+
+
+  hints:
+    label: Hints
+    fields:
+      headlineA1: 
+        label: Position Hinzufügen
+        type: headline
+        numbered: false
+      addpositionhint:
+        label: "Hinweis: Allgemein"
+        type: textarea
+        size: small
+      addpositionsuccess:
+        label: "Hinweis: Erfolgreich eingereicht" 
+        type: textarea
+        size: small
+      addpositionfail:
+        label: "Hinweis: Einreichung fehlgeschlagen" 
+        type: textarea
+        size: small
+
+
+  translate:
+    label: Labels / Buttons
+    fields:
+
+      headlineB1: 
+        label: "Seite: Position Hinzufügen"
+        type: headline
+        numbered: false
+      titel:
+        label: Titel 
+        type: text
+        width: 1/3
+      name:
+        label: Name 
+        type: text
+        width: 1/3
+      mail: 
+        label: E-mail 
+        type: text
+        width: 1/3
+      comment:
+        label: Kommentar 
+        type: text
+        width: 1/3
+      Submit:
+        label: Einrechen Button 
+        type: text
+        width: 1/3
+
+      headlineB2: 
+        label: "Seiten :Position Hinzufügen / Positionen"
+        type: headline
+        numbered: false
+      declaration:
+        label: Deklaration
+        type: text
+        width: 1/3
+      implementation:
+        label: Umsetzung
+        type: text
+        width: 1/3
+      references:
+        label: Referenzen
+        type: text
+        width: 1/3
+      declaration:
+        label: Deklaration
+        type: text
+        width: 1/3
+      implementation:
+        label: Umsetzung
+        type: text
+        width: 1/3
+      references:
+        label: Referenzen
+        type: text
+        width: 1/3
+
+      headlineB3: 
+        label: "Seite: Positionen"
+        type: headline
+        numbered: false
+      sign:
+        label: Unterzeichnen Button
+        type: text
+        width: 1/3
+      signing:
+        label: Unterzeichnende
+        type: text
+        width: 1/3
+      notes:
+        label: Notizen
+        type: text
+        width: 1/3
+      line2:
+        type: line
+      
+  siteinfo:
+    label: Seiteninfo
+    fields:
+
+      description:
+        label: Seitenbeschreibung
+        type: text
+        help: Vorschautext (z.B in Suchmaschienen)
+
+      keywords:
+        label: Keywords
+        type: text
+        help: Schlagwärter zur Suchmaschinen optimierung. Durch Komma trennen!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+Title: Howtodo
+
+----
+
+Text:
+
+Hier findest du Erläuterungen wie du whatstodo nutzen und erweitern kannst. Falls du noch Fragen hast, schreibe uns gerne eine E-Mail. Wir freuen uns über Feedback und helfen gerne weiter.
+
+Position unterzeichnen
+Auf der Hauptseite findest du eine Liste an Positionen, die whatstodo-Liste. Du kannst einen Haken vor die einzelnen Positionen setzen, um diese auszuwählen. Mit einem Klick auf die Sprechblase kannst du deine ausgewählten Positionen unterzeichnen. Auf der Hauptseite werden dir übrigens auch – sobald du dich angemeldet hast – immer alle von dir unterzeichneten Positionen angezeigt.
+
+Position ergänzen
+Hast du eine oder mehrere Positionen ausgewählt und mit dem Klick auf die Sprechblase unterzeichnet, gelangst du zu einer Übersicht aller von dir unterzeichneten Positionen. Hier kannst du jeder Position eine öffentliche Notiz hinzufügen. Eine Notiz versteht sich als individuelle Ergänzung der Position. Du hast hier also die Möglichkeit, die Position auf deine Bedürfnisse anzupassen: Eine Ausnahme oder Erweiterung hinzuzufügen oder weitere Referenzen zu der Position mit anderen zu teilen. Jeder Position lässt sich nur eine Notiz hinzufügen. Notizen können auch später noch hinzugefügt, bearbeitet oder gelöscht werden.
+
+Position hinzufügen
+Um eine neue Position zu veröffentlichen, nutze + Position hinzufügen zu Beginn der whatstodo-Liste. Hier gelangst du zu einem Formular, in dem du deine Position schreiben und veröffentlichen kannst.
+
+Eine Position besteht aus vier Teilen:
+
+Titel (max. 50 Zeichen)
+Deklaration (max. 1500 Zeichen)Hier wird der Standpunkt der Position genau beschrieben: Für was steht sie ein, gegen was wendet sie sich?
+Umsetzung (max. 1500 Zeichen)Hier werden konkrete Punkte genannt, wie der Standpunkt in der Praxis umgesetzt werden kann.
+Referenzen (max. 500 Zeichen)Hier können Quellen und Einzelnachweise vermerkt werden oder externe weiterführende Informationen und Anleitungen zur Position geteilt werden.
+Eine Position sollte sich auf ein spezifisches Thema beziehen und nicht gleichzeitig mehrere verschiedene Bereiche behandeln. Sie sollte so verfasst sein, dass andere Gestalter*innen sie ebenfalls umsetzen können. Argumente und Beispiele sollten mit Quellen belegt und nachvollziehbar beschrieben werden.
+
+Positionen verstehen sich als Allgemeingut bei whatstodo und haben keine Autor*innen. Sie werden unter einer Creative Commons Lizenz (CC BY-NC-SA 4.0) durch whatstodo veröffentlicht. Sobald du die Position eingereicht hast, wird durch unsere Redaktion geprüft, ob sie unserem Selbstverständnis entspricht. Wenn alles passt, wird sie veröffentlicht und du erhältst eine Bestätigung per E-Mail. Mit der Veröffentlichung unterzeichnest du die Position automatisch. Positionen lassen sich im Nachhinein weder bearbeiten noch löschen, da andere Teilnehmer*innen diese ebenfalls unterzeichnen können.
+
+Unterzeichnung entfernen
+Vertrittst du eine Position nicht mehr und möchtest deine Unterzeichnung unter dieser entfernen, kannst du dies auf der Hauptseite tun. Nachdem du dich angemeldet hast, werden alle von dir unterzeichneten Positionen automatisch auf der whatstodo-Liste angezeigt. Entferne einfach den Haken bei der entsprechenden Position und klicke auf die Sprechblase. Die aktuelle Auswahl wird nun gespeichert.
+
+An- & Abmelden
+Unter Login kannst du dich mit deiner E-Mail-Adresse und deinem Passwort anmelden. Falls du dein Passwort vergessen hast, findest du hier ebenfalls einen entsprechenden Link. Bist du bereits angemeldet, erscheint dein Name oben rechts auf der Webseite. Hier gelangst du zu der Übersicht Deine Daten.
+
+Registrieren & Konto löschen
+Hast du noch kein Konto und möchtest dich bei whatstodo registrieren, findest du einen entsprechenden Link unter Login. Möchtest du dein Konto löschen, findest du – sobald du dich angemeldet hast – unter dem Menüpunkt Deine Daten einen entsprechenden Link. Löschst du dein Konto, werden deine Unterzeichnungen und Notizen entfernt. Des Weiteren werden alle deine auf unseren Servern hinterlegten persönlichen Daten gelöscht.
+
+Position melden
+Hast du den Verdacht, dass eine Position nicht dem Selbstverständnis von whatstodo entspricht oder du siehst ein anderes Problem in einer Position, wende dich bitte direkt per E-Mail an uns. Unsere Redaktion wird sich über jeden einzelnen Fall beraten und möglicherweise weitere Schritte einleiten. Gegebenenfalls wendet sie sich für Rückfragen nochmals direkt an dich und informiert dich über unsere Entscheidung.
