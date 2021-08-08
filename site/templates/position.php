@@ -22,4 +22,5 @@
     <li>Beispiel Notiz</li>
 </ul> 
 
+
 <?php snippet('footer'); ?>

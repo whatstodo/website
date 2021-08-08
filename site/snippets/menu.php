@@ -22,7 +22,7 @@
   <ul>
     <?php foreach($kirby->languages() as $language): ?>
     <li<?php e($kirby->language() == $language, ' class="active"') ?>>
-      <a href="<?= $page->url($language->code()) ?>" hreflang="<?php echo $language->code() ?>">
+      <a href="<?= $page->url($language->code()) ?>" hreflang="<?= $language->code() ?>">
         <?= html($language->name()) ?>
       </a>
     </li>
@@ -32,9 +32,10 @@
 
 
 <nav class="search">
-  <ul>
-    <li>Suche</li>
-  </ul>
+  <form action="<?= page('search')->url() ?>">
+    <input type="search" name="q" value="<?= (!empty($query)) ? esc($query) : '' ?>">
+    <input type="submit" value="&#8629;">
+  </form>
 </nav>
 
 

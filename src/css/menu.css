@@ -3,7 +3,6 @@
 .languages {
 	font-size: 1rem;
 	display: inline;
-	margin-bottom: 2rem;
 }
 
 h1 {
@@ -32,6 +31,7 @@ h1 {
 .search,
 .languages {
 	float: right;
+	margin-right: 1rem;
 }
 
 .menu li:first-of-type {
