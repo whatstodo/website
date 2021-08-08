@@ -33,7 +33,7 @@
 
 <nav class="search">
   <form action="<?= page('search')->url() ?>">
-    <input type="search" name="q" value="<?= (!empty($query)) ? esc($query) : '' ?>">
+    <input type="search" name="q" value="<?= (!empty($query)) ? esc($query) : '' ?>" required minlength="3">
     <input type="submit" value="&#8629;">
   </form>
 </nav>

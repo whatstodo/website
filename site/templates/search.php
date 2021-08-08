@@ -1,24 +1,19 @@
 <?php snippet('header'); ?>
 
 
-<?php if ($query == ''): ?> 
+<?php if (strlen($query) <= 2): ?> 
 
-  <h2>Suche</h2> 
+  <div class="caption">Mindestens 2 Buchstaben</div>
 
-  <form action="<?= page('search')->url() ?>">
-      <input type="search" name="q" value="<?= (!empty($query)) ? esc($query) : '' ?>">
-      <input type="submit" value="&#8629;">
-  </form>
-
-<?php else: ?>
+  <?php else: ?>
 
   <?php if ($results->isEmpty() && $resultsPos->isEmpty() && $resultsPart->isEmpty()): ?> 
 
-    <h2>Es konnten leider keine Ergebnisse für "<?= html($query) ?>" gefunden werden!</h2>
+    <div class="caption">Es konnten leider keine Ergebnisse für "<span><?= html($query) ?> </span>" gefunden werden!</div>
 
     <?php else: ?>
 
-      <h2><?= $page->title() ?> für <?= html($query) ?> </h2>
+      <div class="caption"><h2><?= $page->title() ?></h2> für "<span><?= html($query) ?> </span>"</div>
 
       <?php if ($results->isNotEmpty()): ?>
         <h3>Allgemein</h3>
@@ -61,8 +56,8 @@
       <?php endif ?>
 
   <?php endif ?>
-    
 <?php endif ?>
 
-<?php snippet('footer'); ?>
 
+  
+<?php snippet('footer'); ?>
