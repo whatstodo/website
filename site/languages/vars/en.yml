@@ -1,0 +1,16 @@
+positions: Positions
+participants: Participants
+searchresult: Searchresult
+title: Title
+addtitle: Title (max. 40 Characters)
+name: Name
+email: Email
+comment: "Comment (Optional)"
+submit: Submit Position!
+declaration: Declaration
+implementation: Implementation
+references: References
+sign: Sign Position!
+signed: "Signed by:"
+notes: Notes
+search: Search…

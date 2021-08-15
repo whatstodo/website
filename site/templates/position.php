@@ -1,26 +1,30 @@
 <?php snippet('header'); ?>
+
 <h2><?= $page->title() ?></h2>
 
-<h3><?= $site->declaration() ?></h3>
+<h3><?php echo t('title') ?></h3>
 <?= $page->declaration()->kirbytext() ?>
 
-<h3><?= $site->implementation() ?></h3>
+<h3><?php echo t('implementation') ?></h3>
 <?= $page->implementation()->kirbytext() ?>
 
-<button> <?= $site->sign()?> </button>
+<button> <?php echo t('sign') ?> </button>
 
-<h3><?= $site->signing()?></h3>
+<!-- If statement einbauen! -->
+<h3><?php echo t('signed') ?></h3>
 <ul>
     <li>Beispiel Name</li>
 </ul> 
 
-<h3><?= $site->references()?></h3>
-<?= $page->references()->kirbytext() ?>
+<?php if($page->references()->isNotEmpty()): ?>
+    <h3><?php echo t('references') ?></h3>
+    <?= $page->references()->kirbytext() ?>
+<?php endif ?>
 
-<h3><?= $site->notes()?></h3>
+<!-- If statement einbauen! -->
+<h3><?php echo t('notes') ?></h3>
 <ul>
     <li>Beispiel Notiz</li>
 </ul> 
-
 
 <?php snippet('footer'); ?>

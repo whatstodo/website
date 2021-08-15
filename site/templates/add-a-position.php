@@ -1,46 +1,71 @@
 <?php snippet('header'); ?>
 
 <h2><?= $page->title() ?></h2>
-<div><?= $page->hint()->kirbytext() ?></div>
+<div><?= $page->addpositionhint()->kirbytext() ?></div>
 
-<form action="<?php echo $page->url() ?>" method="POST">
-<!-- Labels will be hidden trough css but available for screenreaders -->
-    <label><?= $site->titel()?></label>
-    <textarea <?php if ($form->error('titel')): ?> class="error"<?php endif; ?> name="titel" placeholder="<?= $site->titel()?>" ><?php echo $form->old('titel') ?></textarea>
+<?php if($success): ?>
 
-    <label><?= $site->declaration()?></label>
-    <textarea <?php if ($form->error('declaration')): ?> class="error"<?php endif; ?> name="declaration" placeholder="<?= $site->declaration()?>" ><?php echo $form->old('declaration') ?></textarea>
+    <div class="alert success">
+        <p><?= $success ?></p>
+    </div>
 
-    <label><?= $site->implementation()?></label>
-    <textarea <?php if ($form->error('implementation')): ?> class="error"<?php endif; ?> name="implementation" placeholder="<?= $site->implementation()?>" ><?php echo $form->old('implementation') ?></textarea>
-
-    <label><?= $site->references()?></label>
-    <textarea <?php if ($form->error('references')): ?> class="error"<?php endif; ?> name="references" placeholder="<?= $site->references()?>" ><?php echo $form->old('references') ?></textarea>
-    
-    <label><?= $site->name()?></label>
-    <input <?php if ($form->error('name')): ?> class="error"<?php endif; ?> name="name"  placeholder="<?= $site->name()?>" type="text" value="<?php echo $form->old('name') ?>">
-    
-    <label><?= $site->mail()?></label>
-    <input <?php if ($form->error('email')): ?> class="error"<?php endif; ?> name="email"  placeholder="<?= $site->mail()?>" type="email" value="<?php echo $form->old('email') ?>">
-    
-    <label><?= $site->comment()?></label>
-    <textarea <?php if ($form->error('message')): ?> class="error"<?php endif; ?> name="comment" placeholder="<?= $site->comment()?>" ><?php echo $form->old('comment') ?></textarea>
-
-    <?php echo csrf_field() ?>
-
-    <?php echo honeypot_field() ?>
-
-    <input type="submit" value="<?= $site->submit()?>">
-
-</form>
-
-<?php if ($form->success()): ?>
-    <div><?= $page->successhint()->kirbytext() ?></div>
 <?php else: ?>
-    <?php snippet('uniform/errors', ['form' => $form]) ?>
-<?php endif; ?>
+
+    <?php if (isset($alert['error'])): ?>
+        <div><?= $alert['error'] ?></div>
+    <?php endif ?>
+
+    <form method="post" action="<?= $page->url() ?>">
 
 
+        <div class="honeypot">
+            <label for="website">Website <abbr title="required">*</abbr></label>
+            <input type="url" id="website" name="website" tabindex="-1">
+        </div>
+
+        <!-- Labels will be hidden trough css but available for screenreaders -->
+        <div class="field">
+            <label for="title"> <?php echo t('addtitle') ?> </label>
+            <textarea <?php if (isset($alert['title'])): ?> class="error"<?php endif; ?> id="title" name="title" placeholder="<?php echo t('addtitle') ?>"><?= esc($data['title'] ?? '') ?></textarea>
+        </div>
+
+        <div class="field">
+            <label for="declaration"> <?php echo t('declaration') ?> </label>
+            <textarea <?php if (isset($alert['declaration'])): ?> class="error"<?php endif; ?> id="declaration" name="declaration" placeholder="<?php echo t('declaration') ?>"><?= esc($data['declaration'] ?? '') ?></textarea>
+            <!-- Mögliche Expliziete Error Nachricht: -->
+            <!-- <?= isset($alert['declaration']) ? '<span class="alert error">' . esc($alert['declaration']) . '</span>' : '' ?> -->
+        </div>
+
+        <div class="field">
+            <label for="implementation"> <?php echo t('implementation') ?> </label>
+            <textarea <?php if (isset($alert['implementation'])): ?> class="error"<?php endif; ?> id="implementation" name="implementation" placeholder="<?php echo t('implementation') ?>"><?= esc($data['implementation'] ?? '') ?></textarea>
+        </div>
+
+        <div class="field">
+            <label for="references"> <?php echo t('references') ?> </label>
+            <textarea <?php if (isset($alert['references'])): ?> class="error"<?php endif; ?> id="references" name="references" placeholder="<?php echo t('references') ?>"><?= esc($data['references'] ?? '') ?></textarea>
+        </div>
+
+        <div class="field">
+            <label for="name"> <?php echo t('name') ?> </label>
+            <input <?php if (isset($alert['name'])): ?> class="error"<?php endif; ?> type="text" id="name" name="name" value="<?= esc($data['name'] ?? '', 'attr') ?>" placeholder="<?php echo t('name') ?>">
+        </div>
+
+        <div class="field">
+            <label for="email"> <?php echo t('email') ?> </label>
+            <input <?php if (isset($alert['email'])): ?> class="error"<?php endif; ?> type="text" id="email" name="email" value="<?= esc($data['email'] ?? '', 'attr') ?>" placeholder="<?php echo t('email') ?>">
+        </div>
+
+        <div class="field">
+            <label for="comment"> <?php echo t('comment') ?> </label>
+            <textarea <?php if (isset($alert['comment'])): ?> class="error"<?php endif; ?> id="comment" name="comment" placeholder="<?php echo t('comment') ?>"><?= esc($data['comment'] ?? '') ?></textarea>
+        </div>
+
+        <input type="submit" name="submit" value="<?php echo t('submit') ?>">
+
+    </form>
+
+<?php endif ?>
 
 
 

@@ -1,41 +1,13 @@
-Title: Position hinzufügen
+Title: Position Hinzufügen
 
 ----
 
-Hint: Verfasse eine neue Position! Mit der Veröffentlichung unterzeichnest du diese automatisch, erklärst du dich mit dem Selbstverständnis von whatstodo einverstanden und bestätigst, dass du unser Howtodo beachtest.
+Addpositionhint: Verfasse eine neue Position! Mit der Veröffentlichung unterzeichnest du diese automatisch, erklärst du dich mit dem Selbstverständnis von whatstodo einverstanden und bestätigst, dass du unser Howtodo beachtest.
 
 ----
 
-Successhint: Vielen Dank für Ihre Nachricht. Wir werden uns bald wieder bei Ihnen melden!
+Addpositionsuccess: Vielen Dank für deine Nachricht. Wir werden uns schnellstmöglich bei dir melden!
 
 ----
 
-Nosuccesshint: Fülle bitte alle Felder aus!
-
-----
-
-Submithint: Vielen Dank für Ihre Nachricht. Wir werden uns bald wieder bei Ihnen melden!
-
-----
-
-Declaration: Frauen verdienen im Schnitt 21% weniger als ihre männlichen Kollegen in gleicher Position. Ein geschlechtsspezifisches Lohngefälle gibt es auch in der Gestaltungsbranche, je nach Beruf und Position beträgt dies zwischen durchschnittlich 6 und 18 Prozent. Deshalb verpflichten wir uns hiermit gleiche Löhne zu zahlen. Sowohl im Angestelltenverhältnis, als auch bei einer freien Zusammenarbeit darf das Geschlecht keine Rolle beim Lohn spielen.
-
-----
-
-Implementation:
-
-Gleiche Bezahlung unabhängig vom Geschlecht.
-Gleiche Bedingungen unabhängig vom Geschlecht.
-Offenlegung aller Gehälter.
-
-----
-
-References:
-
-Statistisches Bundesamt – Gender Pay Gap
-Narrow the Gab – Woman Designers
-Designweek – Gender pay gap
-
-----
-
-Text: 
+Addpositionfail: Nicht erfolgreich! Bitte versuche es nochmal! Falls der Fehler bestehen bleibt wende dich an position@whatstodo.design

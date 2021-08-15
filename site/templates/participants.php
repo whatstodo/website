@@ -10,7 +10,9 @@
   <ul>
     <?php foreach($kirby->users()->role('participants')->sortBY('name', 'asc') as $user): ?>
       <!-- Hier noch Link zum Userprofil einfügen -->
-      <li> <?= $user->name() ?> </li>
+      <li> 
+        <a href="<?= $user->url() ?>"><?= $user->name() ?></a>
+      </li>
     <?php endforeach ?>
   </ul>
 </section>

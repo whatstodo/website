@@ -1,3 +1,13 @@
+.honey {
+	position: absolute;
+	left: -9999px;
+}
+
+.honeypot {
+	position: absolute;
+	left: -9999px;
+}
+
 label {
 	display: none;
 }
@@ -9,16 +19,22 @@ textarea,
 	width: 90%;
 	height: 4vh;
 	margin-bottom: 1rem;
-	color: red;
+	color: black;
 	font-size: 1rem;
 	font-family: g2tgr;
 }
 
-.uniform__potty {
-	position: absolute;
-	left: -9999px;
+input,
+textarea {
+	border: black solid 1px;
 }
+
 .error {
-	background: rgba(255, 0, 0, 0.5);
-	border: 3px solid darkblue;
+	background: rgba(255, 0, 0, 0.3);
+	border: black solid 1px;
+	color: red;
+}
+
+.error::placeholder {
+	color: BLACK;
 }

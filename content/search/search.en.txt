@@ -1,1 +1,5 @@
 Title: Searchresults
+
+----
+
+Searchunsuccess: There are no positions or participants with your search term!

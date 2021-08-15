@@ -1,0 +1,12 @@
+title: Search
+preset: none
+
+fields:
+  headline: 
+    label: Hints
+    type: headline
+    numbered: false
+  searchUnsuccess:
+    label: Nicht erfolgreiche Suche
+    type: textarea
+    size: small

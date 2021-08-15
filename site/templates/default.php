@@ -9,7 +9,6 @@
 </section>
 
 <!-- Liste aller Positionen  -->
-<!-- Wenn Nutzer Intaktion möglich: Sortieren nach letzter Interaktion -->
 <section>
   <ul>
     <?php foreach($site->children()->listed() as $child): ?>

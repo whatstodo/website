@@ -4,10 +4,12 @@ Title: Kontakt
 
 Text:
 
-kontakt@whatstodo.design
+Allgemeiner Kontakt:
+(email: info@whatstodo.design text: info@whatstodo.design)
 
-twitter.com/whatstododesign
+Bei Fragen zu Positionen:
+(email: position@whatstodo.design text: position@whatstodo.design)
 
-instagram.com/whatstodo.design
+(link: https://www.instagram.com/whatstodo.design/ text: instagram.com/whatstodo.design)
 
-github.com/whatstodo.design
+(link: https://github.com/whatstodo text: github.com/whatstodo)
