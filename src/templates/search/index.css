@@ -1,11 +1,11 @@
 h2 {
-	font-size: 1rem;
-	display: inline-block;
+  font-size: 1rem;
+  display: inline-block;
 }
 
 .caption {
-	display: block;
+  display: block;
 }
 .searchterm-highlight {
-	color: red;
+  color: red;
 }

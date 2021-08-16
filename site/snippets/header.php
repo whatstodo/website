@@ -19,4 +19,4 @@ $entry = "templates/$template/index.js";
 </head>
 <body>
 
-<?php snippet('menu') ?>
+<?php snippet('menu'); ?>

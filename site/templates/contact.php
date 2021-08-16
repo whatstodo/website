@@ -3,5 +3,4 @@
 <h2><?= $page->title() ?></h2>
 <?= $page->text()->kirbytext() ?>
 
-
 <?php snippet('footer'); ?>
