@@ -2,10 +2,10 @@ positions: Positionen
 participants: Teilnehemende
 searchresult: Suchergebnisse
 title: Titel
-addtitle: Titel (max 40. Zeichen)
+add_title: Titel (max 40. Zeichen)
 name: Name
 email: E-Mail
-comment: "Kommentar (Optional)"
+comment: 'Kommentar (Optional)'
 submit: Position einreichen!
 declaration: Deklaration
 implementation: Umsetzung
