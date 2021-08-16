@@ -4,7 +4,8 @@ $attributes = [
   'id' => "field-$name",
   'name' => $name,
   'type' => 'email',
+  'value' => $form->old($name),
   'placeholder' => $placeholder,
 ]; ?>
 
-<input <?= attr($attributes) ?>><?= $form->old($name) ?></textarea>
+<input <?= attr($attributes) ?>>
