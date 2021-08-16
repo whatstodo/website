@@ -2,11 +2,11 @@ title: Search
 preset: none
 
 fields:
-  headline: 
+  headline:
     label: Hints
     type: headline
     numbered: false
-  searchUnsuccess:
+  search_unsuccess:
     label: Nicht erfolgreiche Suche
     type: textarea
     size: small

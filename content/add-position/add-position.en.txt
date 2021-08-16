@@ -2,12 +2,12 @@ Title: Add a new position
 
 ----
 
-Addpositionhint: Write a new post! By posting, you automatically sign this, agree to whatstodo's self-image and confirm that you follow our howtodo.
+add_position_hint: Write a new post! By posting, you automatically sign this, agree to whatstodo's self-image and confirm that you follow our howtodo.
 
 ----
 
-Addpositionsuccess: Thank you for your submission. You should have recevied an email!
+add_position_success: Thank you for your submission. You should have recevied an email!
 
 ----
 
-Addpositionfail: Not successful! Please try again! If the error persists, contact position@whatstodo.design
+add_position_fail: Not successful! Please try again! If the error persists, contact position@whatstodo.design

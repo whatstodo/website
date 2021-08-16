@@ -2,4 +2,4 @@ Title: Searchresults
 
 ----
 
-Searchunsuccess: There are no positions or participants with your search term!
+search_unsuccess: There are no positions or participants with your search term!

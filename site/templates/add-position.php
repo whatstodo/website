@@ -1,7 +1,7 @@
 <?php snippet('header'); ?>
 
 <h2><?= $page->title() ?></h2>
-<div><?= $page->addpositionhint()->kirbytext() ?></div>
+<div><?= $page->add_position_hint()->kirbytext() ?></div>
 
 <?php if ($success): ?>
 

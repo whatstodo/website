@@ -2,19 +2,19 @@ title: Add a Position
 preset: none
 
 fields:
-  headline: 
+  headline:
     label: Hints
     type: headline
     numbered: false
-  addpositionhint:
+  add_position_hint:
     label: Allgemein
     type: textarea
     size: small
-  addpositionsuccess:
+  add_position_success:
     label: Erfolgreich eingereicht
     type: textarea
     size: small
-  addpositionfail:
+  add_position_fail:
     label: Einreichung fehlgeschlagen
     type: textarea
     size: small

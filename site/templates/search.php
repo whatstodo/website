@@ -3,7 +3,7 @@
 <!-- Display "no result" for unseccesfull searches -->
 <?php if ($resultsPos->isEmpty() && $resultsPart->isEmpty()): ?>
 
-<h2><?= $page->searchUnsuccess()->kirbytext() ?></h2>
+<h2><?= $page->search_unsuccess()->kirbytext() ?></h2>
 
 <?php else: ?>
 

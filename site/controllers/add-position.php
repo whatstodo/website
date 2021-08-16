@@ -111,15 +111,15 @@ return function ($kirby, $site, $pages, $page) {
       } catch (Exception $error) {
         if (option('debug')):
           $alert['error'] =
-            $page->addpositionfail()->kirbytext() . $error->getMessage();
+            $page->add_position_fail()->kirbytext() . $error->getMessage();
         else:
-          $alert['error'] = $page->addpositionfail()->kirbytext();
+          $alert['error'] = $page->add_position_fail()->kirbytext();
         endif;
       }
 
       // no exception occurred, let's send a success message
       if (empty($alert) === true) {
-        $success = $page->addpositionsuccess()->kirbytext();
+        $success = $page->add_position_success()->kirbytext();
         $data = [];
       }
     }
