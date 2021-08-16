@@ -3,8 +3,8 @@
 <section>
   <ul>
     <li>
-      <a href="<?= $site->find('add-a-position')->url() ?>"><?= $site
-  ->find('add-a-position')
+      <a href="<?= $site->find('add-position')->url() ?>"><?= $site
+  ->find('add-position')
   ->title() ?></a>
     </li>
   </ul>
