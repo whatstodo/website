@@ -47,8 +47,7 @@ return function ($kirby, $site, $pages, $page) {
     } else {
       try {
         $kirby->impersonate('kirby');
-        // we store registrations as subpages of the current page
-        $addposition = $site->createChild([
+        $addposition = page('positions')->createChild([
           'slug' => date('y-m-d-H-i') . '-' . esc($data['title']),
           'template' => 'position',
           'content' => $data,

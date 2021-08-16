@@ -1,58 +1,39 @@
 title: Site
+preset: pages
+unlisted: true
+# tabs:
 
-tabs: 
+#   positions:
+#     label: Positionen
+#     sections:
+#       drafts:
+#         headline: Unveröffentlicht
+#         type: pages
+#         status: drafts
+#         create: Position
+#       listed:
+#         headline: Veröffentlicht
+#         type: pages
+#         status: listed
 
-  positions:
-    label: Positionen
-    sections:
-      drafts:
-        headline: Unveröffentlicht
-        type: pages
-        status: drafts
-        create: Position
-      listed:
-        headline: Veröffentlicht
-        type: pages
-        status: listed
+#   pages:
+#     label: Allgemeine Seiten
+#     preset: pages
+#     unlisted: true
+#     listed: false
+#     drafts: false
 
+#   siteinfo:
+#     label: Seiteninfo
+#     fields:
 
-  pages:
-    label: Allgemeine Seiten
-    preset: pages
-    unlisted: true
-    listed: false
-    drafts: false
+#       description:
+#         label: Seitenbeschreibung
+#         type: text
+#         help: Vorschautext (z.B in Suchmaschienen)
 
-      
-  siteinfo:
-    label: Seiteninfo
-    fields:
-
-      description:
-        label: Seitenbeschreibung
-        type: text
-        help: Vorschautext (z.B in Suchmaschienen)
-
-      keywords:
-        label: Keywords
-        type: text
-        help: Schlagwärter zur Suchmaschinen optimierung. Durch Komma trennen!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#       keywords:
+#         label: Keywords
+#         type: text
+#         help: Schlagwärter zur Suchmaschinen optimierung. Durch Komma trennen!
 
