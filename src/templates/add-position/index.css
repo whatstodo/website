@@ -1,13 +1,3 @@
-.honey {
-  position: absolute;
-  left: -9999px;
-}
-
-.honeypot {
-  position: absolute;
-  left: -9999px;
-}
-
 label {
   display: none;
 }

@@ -1,104 +1,75 @@
 <?php snippet('header'); ?>
 
 <h2><?= $page->title() ?></h2>
-<div><?= $page->add_position_hint()->kirbytext() ?></div>
+<div><?= $page->add_position_hint() ?></div>
 
-<?php if ($success): ?>
-
-<div class="alert success">
-  <p><?= $success ?></p>
-</div>
-
-<?php else: ?>
-
-<?php if (isset($alert['error'])): ?>
-<div><?= $alert['error'] ?></div>
-<?php endif; ?>
-
-<form method="post" action="<?= $page->url() ?>">
-
-
-  <div class="honeypot">
-    <label for="website">Website <abbr title="required">*</abbr></label>
-    <input type="url" id="website" name="website" tabindex="-1">
-  </div>
-
-  <!-- Labels will be hidden trough css but available for screenreaders -->
+<form action="<?= $page->url() ?>" method="POST">
   <div class="field">
-    <label for="title"> <?php echo t('addtitle'); ?> </label>
-    <textarea <?php if (
-      isset($alert['title'])
-    ): ?> class="error" <?php endif; ?> id="title" name="title" placeholder="<?php echo t(
-   'addtitle'
- ); ?>"><?= esc($data['title'] ?? '') ?></textarea>
+    <label for="field-title"><?= t('add_title') ?></label>
+    <?php snippet('form/textarea', [
+      'form' => $form,
+      'name' => 'title',
+      'placeholder' => t('add_title'),
+    ]); ?>
   </div>
 
   <div class="field">
-    <label for="declaration"> <?php echo t('declaration'); ?> </label>
-    <textarea <?php if (
-      isset($alert['declaration'])
-    ): ?> class="error" <?php endif; ?> id="declaration" name="declaration" placeholder="<?php echo t(
-   'declaration'
- ); ?>"><?= esc($data['declaration'] ?? '') ?></textarea>
-    <!-- Mögliche Expliziete Error Nachricht: -->
-    <!-- <?= isset($alert['declaration'])
-      ? '<span class="alert error">' . esc($alert['declaration']) . '</span>'
-      : '' ?> -->
+    <label for="field-declaration"><?= t('add_title') ?></label>
+    <?php snippet('form/textarea', [
+      'form' => $form,
+      'name' => 'declaration',
+      'placeholder' => t('declaration'),
+    ]); ?>
   </div>
 
   <div class="field">
-    <label for="implementation"> <?php echo t('implementation'); ?> </label>
-    <textarea <?php if (
-      isset($alert['implementation'])
-    ): ?> class="error" <?php endif; ?> id="implementation" name="implementation" placeholder="<?php echo t(
-   'implementation'
- ); ?>"><?= esc($data['implementation'] ?? '') ?></textarea>
+    <label for="field-implementation"><?= t('add_title') ?></label>
+    <?php snippet('form/textarea', [
+      'form' => $form,
+      'name' => 'implementation',
+      'placeholder' => t('implementation'),
+    ]); ?>
   </div>
 
   <div class="field">
-    <label for="references"> <?php echo t('references'); ?> </label>
-    <textarea <?php if (
-      isset($alert['references'])
-    ): ?> class="error" <?php endif; ?> id="references" name="references" placeholder="<?php echo t(
-   'references'
- ); ?>"><?= esc($data['references'] ?? '') ?></textarea>
+    <label for="field-references"><?= t('add_title') ?></label>
+    <?php snippet('form/textarea', [
+      'form' => $form,
+      'name' => 'references',
+      'placeholder' => t('references'),
+    ]); ?>
   </div>
 
   <div class="field">
-    <label for="name"> <?php echo t('name'); ?> </label>
-    <input <?php if (
-      isset($alert['name'])
-    ): ?> class="error" <?php endif; ?> type="text" id="name" name="name" value="<?= esc(
-   $data['name'] ?? '',
-   'attr'
- ) ?>" placeholder="<?php echo t('name'); ?>">
+    <label for="field-name"><?= t('name') ?></label>
+    <?php snippet('form/text', [
+      'form' => $form,
+      'name' => 'name',
+      'placeholder' => t('name'),
+    ]); ?>
   </div>
 
   <div class="field">
-    <label for="email"> <?php echo t('email'); ?> </label>
-    <input <?php if (
-      isset($alert['email'])
-    ): ?> class="error" <?php endif; ?> type="text" id="email" name="email" value="<?= esc(
-   $data['email'] ?? '',
-   'attr'
- ) ?>" placeholder="<?php echo t('email'); ?>">
+    <label for="field-email"><?= t('email') ?></label>
+    <?php snippet('form/text', [
+      'form' => $form,
+      'name' => 'email',
+      'placeholder' => t('email'),
+    ]); ?>
   </div>
 
   <div class="field">
-    <label for="comment"> <?php echo t('comment'); ?> </label>
-    <textarea <?php if (
-      isset($alert['comment'])
-    ): ?> class="error" <?php endif; ?> id="comment" name="comment" placeholder="<?php echo t(
-   'comment'
- ); ?>"><?= esc($data['comment'] ?? '') ?></textarea>
+    <label for="field-comment"><?= t('add_title') ?></label>
+    <?php snippet('form/textarea', [
+      'form' => $form,
+      'name' => 'comment',
+      'placeholder' => t('comment'),
+    ]); ?>
   </div>
 
-  <input type="submit" name="submit" value="<?php echo t('submit'); ?>">
-
+  <?php echo csrf_field(); ?>
+  <?php echo honeypot_field(); ?>
+  <input type="submit" value="<?= t('submit') ?>">
 </form>
-
-<?php endif; ?>
-
-
 
 <?php snippet('footer'); ?>
