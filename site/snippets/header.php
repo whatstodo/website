@@ -6,17 +6,19 @@ $entry = "templates/$template/index.js";
 
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kirby Vite Multi-Page</title>
+  <title><?= $site->title() ?></title>
   <?= vite()->client() ?>
   <!-- Include the shared css ... -->
   <?= vite()->css() ?>
   <!-- ... and the template's css -->
   <?= vite()->css($entry) ?>
 </head>
+
 <body>
 
-<?php snippet('menu'); ?>
+  <?php snippet('menu'); ?>

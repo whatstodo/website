@@ -1,29 +1,14 @@
 <nav class="menu">
   <ul>
     <li>
-      <h1><a href="<?= $site->find('home')->url() ?>">whatstodo.design</a></h1>
+      <h1><a href="<?= page('home')->url() ?>">whatstodo.design</a></h1>
     </li>
+    <?php foreach ($site->children()->listed() as $child): ?>
     <li>
-      <a href="<?= $site->find('info')->url() ?>"><?= $site
-  ->find('info')
-  ->title() ?></a>
+      <a href="<?= $child->url() ?>"><?= $child->title() ?></a>
     </li>
-    <li>
-      <a href="<?= $site->find('howtodo')->url() ?>"><?= $site
-  ->find('howtodo')
-  ->title() ?></a>
-    </li>
-    <li>
-      <a href="<?= $site->find('participants')->url() ?>"><?= $site
-  ->find('participants')
-  ->title() ?></a>
-    </li>
-    <li>
-      <a href="<?= $site->find('contact')->url() ?>"><?= $site
-  ->find('contact')
-  ->title() ?></a>
-    </li>
-  </ul> 
+    <?php endforeach; ?>
+  </ul>
 </nav>
 
 <nav class="languages">
@@ -35,8 +20,8 @@
       ) ?>" hreflang="<?= $language->code() ?>">
         <?= html($language->name()) ?>
       </a>
-    </li>
-    <?php endforeach; ?>
+      </li>
+      <?php endforeach; ?>
   </ul>
 </nav>
 
@@ -49,5 +34,3 @@
     <input type="submit" value="&#8629;">
   </form>
 </nav>
-
-
