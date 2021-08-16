@@ -6,11 +6,11 @@
 <section>
   <ul>
     <?php foreach (
-        $kirby
-            ->users()
-            ->role('participants')
-            ->sortBY('name', 'asc')
-        as $user
+      $kirby
+        ->users()
+        ->role('participants')
+        ->sortBY('name', 'asc')
+      as $user
     ): ?>
     <!-- Hier noch Link zum Userprofil einfügen -->
     <li>

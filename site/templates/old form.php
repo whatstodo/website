@@ -3,51 +3,51 @@
   <!-- Labels will be hidden trough css but available for screenreaders -->
   <label><?php echo t('title'); ?></label>
   <textarea <?php if (
-      $form->error('titel')
+    $form->error('titel')
   ): ?> class="error" <?php endif; ?> name="titel" placeholder="<?php echo t(
-     'title'
+   'title'
  ); ?>"><?php echo $form->old('titel'); ?></textarea>
 
   <label><?php echo t('declaration'); ?></label>
   <textarea <?php if (
-      $form->error('declaration')
+    $form->error('declaration')
   ): ?> class="error" <?php endif; ?> name="declaration" placeholder="<?php echo t(
-     'declaration'
+   'declaration'
  ); ?>"><?php echo $form->old('declaration'); ?></textarea>
 
   <label><?php echo t('implementation'); ?></label>
   <textarea <?php if (
-      $form->error('implementation')
+    $form->error('implementation')
   ): ?> class="error" <?php endif; ?> name="implementation" placeholder="<?php echo t(
-     'implementation'
+   'implementation'
  ); ?>"><?php echo $form->old('implementation'); ?></textarea>
 
   <label><?php echo t('references'); ?></label>
   <textarea <?php if (
-      $form->error('references')
+    $form->error('references')
   ): ?> class="error" <?php endif; ?> name="references" placeholder="<?php echo t(
-     'references'
+   'references'
  ); ?>"><?php echo $form->old('references'); ?></textarea>
 
   <label><?php echo t('name'); ?></label>
   <input <?php if (
-      $form->error('name')
+    $form->error('name')
   ): ?> class="error" <?php endif; ?> name="name" placeholder="<?php echo t(
-     'name'
+   'name'
  ); ?>" type="text" value="<?php echo $form->old('name'); ?>">
 
   <label><?php echo t('mail'); ?></label>
   <input <?php if (
-      $form->error('email')
+    $form->error('email')
   ): ?> class="error" <?php endif; ?> name="email" placeholder="<?php echo t(
-     'email'
+   'email'
  ); ?>" type="email" value="<?php echo $form->old('email'); ?>">
 
   <label><?php echo t('comment'); ?></label>
   <textarea <?php if (
-      $form->error('message')
+    $form->error('message')
   ): ?> class="error" <?php endif; ?> name="comment" placeholder="<?php echo t(
-     'comment'
+   'comment'
  ); ?>"><?php echo $form->old('comment'); ?></textarea>
 
   <?php echo csrf_field(); ?>

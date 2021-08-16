@@ -5,23 +5,23 @@
     </li>
     <li>
       <a href="<?= $site->find('info')->url() ?>"><?= $site
-    ->find('info')
-    ->title() ?></a>
+  ->find('info')
+  ->title() ?></a>
     </li>
     <li>
       <a href="<?= $site->find('howtodo')->url() ?>"><?= $site
-    ->find('howtodo')
-    ->title() ?></a>
+  ->find('howtodo')
+  ->title() ?></a>
     </li>
     <li>
       <a href="<?= $site->find('participants')->url() ?>"><?= $site
-    ->find('participants')
-    ->title() ?></a>
+  ->find('participants')
+  ->title() ?></a>
     </li>
     <li>
       <a href="<?= $site->find('contact')->url() ?>"><?= $site
-    ->find('contact')
-    ->title() ?></a>
+  ->find('contact')
+  ->title() ?></a>
     </li>
   </ul> 
 </nav>
@@ -31,7 +31,7 @@
     <?php foreach ($kirby->languages() as $language): ?>
     <li<?php e($kirby->language() == $language, ' class="active"'); ?>>
       <a href="<?= $page->url(
-          $language->code()
+        $language->code()
       ) ?>" hreflang="<?= $language->code() ?>">
         <?= html($language->name()) ?>
       </a>
@@ -44,8 +44,8 @@
 <nav class="search">
   <form action="<?= page('search')->url() ?>">
     <input type="search" name="q" value="<?= !empty($query)
-        ? esc($query)
-        : '' ?>" required placeholder="<?php echo t('search'); ?>">
+      ? esc($query)
+      : '' ?>" required placeholder="<?php echo t('search'); ?>">
     <input type="submit" value="&#8629;">
   </form>
 </nav>
