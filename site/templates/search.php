@@ -1,17 +1,13 @@
 <?php snippet('header'); ?>
 
-<!-- Display "no result" for unseccesfull searches -->
-<?php if ($resultsPos->isEmpty() && $resultsPart->isEmpty()): ?>
-
+<?php if (!$hasResults): ?>
 <h2><?= $page->search_unsuccess()->kirbytext() ?></h2>
-
 <?php else: ?>
 
-<!-- Searchresults in positions  -->
-<?php if ($resultsPos->isNotEmpty()): ?>
-<h3><?php echo t('positions'); ?></h3>
+<?php if ($results['positions']->isNotEmpty()): ?>
+<h3><?= t('positions') ?></h3>
 <ul>
-  <?php foreach ($resultsPos as $result): ?>
+  <?php foreach ($results['positions'] as $result): ?>
   <li>
     <a href="<?= $result->url() ?>">
       <?= $result->title() ?>
@@ -21,12 +17,10 @@
 </ul>
 <?php endif; ?>
 
-<!-- Searchresults in Participants  -->
-
-<?php if ($resultsPart->isNotEmpty()): ?>
-<h3><?php echo t('participants'); ?></h3>
+<?php if ($results['participants']->isNotEmpty()): ?>
+<h3><?= t('participants') ?></h3>
 <ul>
-  <?php foreach ($resultsPart as $result): ?>
+  <?php foreach ($results['participants'] as $result): ?>
   <li>
     <a href="<?= $result->url() ?>">
       <?= $result->name() ?>

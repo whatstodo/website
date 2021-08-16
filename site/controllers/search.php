@@ -1,23 +1,25 @@
 <?php
 
-return function ($site, $kirby) {
+return function ($kirby) {
   $query = get('q');
-  $resultsPos = $site
-    ->index()
-    ->listed()
-    ->search($query, 'title|declaration|implementation|references|notes');
-  $resultsPart = $kirby
+
+  $positions = search(
+    page('positions')->children(),
+    $query,
+    'title|declaration|implementation|references|notes'
+  );
+
+  $participants = $kirby
     ->users()
     ->role('participants')
     ->search($query, 'name');
 
   return [
     'query' => $query,
-    'resultsPos' => $resultsPos,
-    'resultsPart' => $resultsPart,
+    'results' => [
+      'positions' => $positions,
+      'participants' => $participants,
+    ],
+    'hasResults' => $positions->isNotEmpty() || $participants->isNotEmpty(),
   ];
 };
-
-// Adjustment in file: kirby/config/components
-// Line 230-233 commented out: Result two search words are not splitted
-// Line 161: 'minlength' => 1,
