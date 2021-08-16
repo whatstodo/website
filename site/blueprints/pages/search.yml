@@ -8,5 +8,5 @@ fields:
     numbered: false
   search_unsuccess:
     label: Nicht erfolgreiche Suche
-    type: textarea
+    type: writer
     size: small

@@ -6,12 +6,4 @@ Slug: contact
 
 ----
 
-Text:
-
-kontakt@whatstodo.design
-
-twitter.com/whatstododesign
-
-instagram.com/whatstodo.design
-
-github.com/whatstodo.design
+Text: <p>kontakt@whatstodo.design</p><p>twitter.com/whatstododesign</p><p>instagram.com/whatstodo.design github.com/whatstodo.design</p>

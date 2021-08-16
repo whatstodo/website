@@ -2,14 +2,4 @@ Title: Kontakt
 
 ----
 
-Text:
-
-Allgemeiner Kontakt:
-(email: info@whatstodo.design text: info@whatstodo.design)
-
-Bei Fragen zu Positionen:
-(email: position@whatstodo.design text: position@whatstodo.design)
-
-(link: https://www.instagram.com/whatstodo.design/ text: instagram.com/whatstodo.design)
-
-(link: https://github.com/whatstodo text: github.com/whatstodo)
+Text: <p>Allgemeiner Kontakt:<br>(email: info@whatstodo.design text: info@whatstodo.design)</p><p>Bei Fragen zu Positionen:<br>(email: position@whatstodo.design text: position@whatstodo.design)<br>(link: https://www.instagram.com/whatstodo.design/ text: instagram.com/whatstodo.design)<br>(link: https://github.com/whatstodo text: github.com/whatstodo)</p>

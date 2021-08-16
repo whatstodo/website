@@ -4,5 +4,5 @@ preset: none
 fields:
   text:
     label: Text
-    type: textarea
+    type: writer
     size: large

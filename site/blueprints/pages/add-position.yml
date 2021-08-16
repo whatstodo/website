@@ -8,13 +8,13 @@ fields:
     numbered: false
   add_position_hint:
     label: Allgemein
-    type: textarea
+    type: writer
     size: small
   add_position_success:
     label: Erfolgreich eingereicht
-    type: textarea
+    type: writer
     size: small
   add_position_fail:
     label: Einreichung fehlgeschlagen
-    type: textarea
+    type: writer
     size: small
