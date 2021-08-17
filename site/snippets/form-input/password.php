@@ -1,10 +1,9 @@
 <?php
 $attributes = [
   'class' => $form->error($name) ? 'error' : null,
-  'id' => "field-$name",
+  'id' => $id,
   'name' => $name,
-  'type' => 'text',
-  'value' => $form->old($name),
+  'type' => 'password',
   'placeholder' => $placeholder,
 ]; ?>
 

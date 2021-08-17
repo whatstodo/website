@@ -10,27 +10,15 @@
 <div><?= $form->error('email')[0] ?></div>
 <?php endif; ?>
 
-<form method="post" action="<?= $page->url() ?>">
-  <div class="field">
-    <label for="field-email"><?= t('email') ?></label>
-    <?php snippet('form/email', [
-      'form' => $form,
-      'name' => 'email',
-      'placeholder' => t('email'),
-    ]); ?>
-  </div>
 
-  <div class="field">
-    <label for="field-password"><?= t('password') ?></label>
-    <?php snippet('form/password', [
-      'form' => $form,
-      'name' => 'password',
-      'placeholder' => t('password'),
-    ]); ?>
-  </div>
-
-  <?php echo csrf_field(); ?>
-  <input type="submit" name="login" value="<?= t('login') ?>">
-</form>
+<?php snippet('form', [
+  'form' => $form,
+  'honeypot' => false,
+  'submit' => t('login'),
+  'fields' => [
+    'email' => ['type' => 'email', 'label' => t('email')],
+    'password' => ['type' => 'password', 'label' => t('password')],
+  ],
+]); ?>
 
 <?php snippet('footer'); ?>

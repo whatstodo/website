@@ -1,11 +1,9 @@
 <?php
 $attributes = [
   'class' => $form->error($name) ? 'error' : null,
-  'id' => "field-$name",
+  'id' => $id,
   'name' => $name,
-  'type' => 'email',
-  'value' => $form->old($name),
   'placeholder' => $placeholder,
 ]; ?>
 
-<input <?= attr($attributes) ?>>
+<textarea <?= attr($attributes) ?>><?= $form->old($name) ?></textarea>
