@@ -1,9 +1,10 @@
-title: Participants
+title: Editor
+label: can do
 permissions:
   access:
     *: false
-    # panel: true
-    # site: true
+    panel: true
+    site: true
     # settings: true
     # users: true
   files:
