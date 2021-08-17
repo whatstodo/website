@@ -14,11 +14,11 @@ class RegisterAction extends Action {
       $user = kirby()
         ->users()
         ->create([
-          'email' => $this->form->data('email'),
+          'email' => esc($this->form->data('email')),
           'role' => 'participant',
           'language' => kirby()->language(),
-          'name' => $this->form->data('name'),
-          'password' => $this->form->data('email'),
+          'name' => esc($this->form->data('name')),
+          'password' => $this->form->data('password'),
         ]);
 
       if ($user and $user->login($this->form->data('password'))) {

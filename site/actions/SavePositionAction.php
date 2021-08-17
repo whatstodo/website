@@ -8,11 +8,16 @@ namespace Uniform\Actions;
 class SavePositionAction extends Action {
   public function perform() {
     try {
+      $slug = date('y-m-d-H-i') . '-' . esc($this->form->data('title'), 'url');
       kirby()->impersonate('kirby');
       page('positions')->createChild([
-        'slug' => date('y-m-d-H-i') . '-' . $this->form->data('title'),
+        'slug' => $slug,
         'template' => 'position',
-        'content' => $this->form->data(),
+        'content' => [
+          'declaration' => esc($this->form->data('declaration')),
+          'implementation' => esc($this->form->data('implementation')),
+          'references' => esc($this->form->data('references')),
+        ],
       ]);
     } catch (\Exception $e) {
       // Todo: translate/handle error message.
