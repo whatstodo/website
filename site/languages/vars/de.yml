@@ -5,8 +5,10 @@ title: Titel
 add_title: Titel (max 40. Zeichen)
 name: Name
 email: E-Mail
+password: Passwort
 comment: 'Kommentar (Optional)'
 submit: Position einreichen!
+login: Login
 declaration: Deklaration
 implementation: Umsetzung
 references: Referenzen
