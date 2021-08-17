@@ -2,6 +2,9 @@
 
 namespace Uniform\Actions;
 
+/**
+ * Save a new position (as a draft).
+ */
 class SavePositionAction extends Action {
   public function perform() {
     try {
@@ -12,7 +15,14 @@ class SavePositionAction extends Action {
         'content' => $this->form->data(),
       ]);
     } catch (\Exception $e) {
-      $this->fail($e->getMessage());
+      // Todo: translate/handle error message.
+      $this->fail(
+        'Something went wrong ' . (option('debug') ? $e->getMessage() : '')
+      );
+    } finally {
+      // Just to be sure we reset the super user when everything is finished
+      // (even if there was an error).
+      kirby()->impersonate();
     }
   }
 }

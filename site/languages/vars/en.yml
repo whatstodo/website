@@ -4,8 +4,10 @@ searchresult: Searchresult
 title: Title
 add_title: Title (max. 40 Characters)
 name: Name
+studio_name: (Studio-)Name
 email: Email
 password: Password
+website: Website
 comment: 'Comment (Optional)'
 submit: Submit Position!
 login: Login

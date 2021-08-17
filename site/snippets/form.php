@@ -1,6 +1,7 @@
 <?php
 $action = $action ?? $page->url();
 $honeypot = $honeypot ?? true;
+$honeypotName = $honeypotName ?? null;
 $submit = $submit ?? 'Submit';
 ?>
 
@@ -24,10 +25,7 @@ $submit = $submit ?? 'Submit';
   <?php endforeach; ?>
 
   <?php echo csrf_field(); ?>
-
-  <?php if ($honeypot): ?>
-    <?php echo honeypot_field(); ?>
-  <?php endif; ?>
+  <?php e($honeypot, honeypot_field($honeypotName)); ?>
 
   <input type="submit" value="<?= $submit ?>">
 </form>
