@@ -7,3 +7,11 @@ Description: test
 ----
 
 Keywords: test
+
+----
+
+hint-add-position-success: Japp!
+
+----
+
+hint-add-position: Default hint

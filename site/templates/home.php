@@ -1,5 +1,7 @@
 <?php snippet('header'); ?>
 
+<?php snippet('hint', ['default' => 'add-position']); ?>
+
 <section>
   <ul>
     <li>
