@@ -31,21 +31,22 @@ return function ($kirby) {
   ]);
 
   if ($kirby->request()->is('POST')) {
-    $form->savePositionAction();
-    // ->emailAction([
-    //   'template' => 'respond',
-    //   'from' => 'position@whatstodo.test',
-    //   'replyTo' => 'position@whatstodo.test',
-    //   'to' => $form->data('email'),
-    //   'subject' => 'Your position "{{title}}" has arrived',
-    // ])
-    // ->emailAction([
-    //   'template' => 'internal',
-    //   'from' => 'noreply@whatstodo.test',
-    //   'replyTo' => $form->data('email'),
-    //   'to' => 'position@whatstodo.test',
-    //   'subject' => 'New Position: "{{name}}"',
-    // ]);
+    $form
+      ->savePositionAction()
+      ->emailAction([
+        'template' => 'respond',
+        'from' => 'position@whatstodo.test',
+        'replyTo' => 'position@whatstodo.test',
+        'to' => $form->data('email'),
+        'subject' => 'Your position "{{title}}" has arrived',
+      ])
+      ->emailAction([
+        'template' => 'internal',
+        'from' => 'noreply@whatstodo.test',
+        'replyTo' => $form->data('email'),
+        'to' => 'position@whatstodo.test',
+        'subject' => 'New Position: "{{name}}"',
+      ]);
   }
 
   return compact('form');
