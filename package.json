@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "scripts": {
     "vite": "vite",
-    "dev": "shx touch src/.lock && concurrently \"npm:vite\" \"npm:mailhog\"",
+    "dev": "shx touch src/.lock && npm run vite",
     "build": "shx rm -f src/.lock && vite build",
     "mailhog": "~/go/bin/MailHog"
   },
