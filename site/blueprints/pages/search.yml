@@ -1,12 +1,2 @@
 title: Search
 preset: none
-
-fields:
-  headline:
-    label: Hints
-    type: headline
-    numbered: false
-  search_unsuccess:
-    label: Nicht erfolgreiche Suche
-    type: writer
-    size: small

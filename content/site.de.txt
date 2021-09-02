@@ -2,7 +2,27 @@ Title: Whatstodo
 
 ----
 
-Description: test
+Add-position-hint: <p>Verfasse eine neue Position! Mit der Veröffentlichung unterzeichnest du diese automatisch, erklärst du dich mit dem Selbstverständnis von whatstodo einverstanden und bestätigst, dass du unser Howtodo beachtest.</p>
+
+----
+
+Add-position-success: <p>Vielen Dank für deine Nachricht. Wir werden uns schnellstmöglich bei dir melden!</p>
+
+----
+
+Add-position-fail: <p>Nicht erfolgreich! Bitte versuche es nochmal! Falls der Fehler bestehen bleibt wende dich an position@whatstodo.design</p>
+
+----
+
+Search-fail: Es gibt keine Positionen oder Teilnehmer mit deinem Suchwort!
+
+----
+
+Favicon: 
+
+----
+
+Description: Coole Webseite!
 
 ----
 
@@ -10,8 +30,4 @@ Keywords: test
 
 ----
 
-hint-add-position-success: Japp!
-
-----
-
-hint-add-position: Default hint
+Test: test

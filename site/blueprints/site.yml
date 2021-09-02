@@ -1,13 +1,61 @@
 title: Site
-sections:
+
+tabs:
   pages:
-    type: pages
-    headline: Seiten
-    image: icon
+    label: Seiten
+    icon: 📖
+    sections:
+
+      listed:
+        headline: Seiten
+        type: pages
+        status: all
+
+  hints:
+    label: Hints
+    icon: ℹ️
+    fields:
+      
+      headlineA:
+        label: Position Hinzufügen
+        type: headline
+        numbered: false
+      add_position_hint:
+        label: Default
+        type: writer
+        size: small
+      add_position_success:
+        label: Erfolgreich
+        type: writer
+        size: small
+      add_position_fail:
+        label: Fehlgeschlagen
+        type: writer
+        size: small
+
+      line:
+
+      headlineB:
+        label: Suche
+        type: headline
+        numbered: false
+      search_fail:
+        label: Fehlgeschlagen
+        type: text
+        size: small
 
   site_info:
+    label: Web Infos
+    icon: 💻
     type: fields
     fields:
+
+      favicon:
+        label: Favicon
+        type: files
+        max: 1
+        help: "Bild -> png / 512px × 512px / Qualität: 10"
+
       description:
         label: Seitenbeschreibung
         type: text

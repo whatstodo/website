@@ -1,6 +1,33 @@
-Description: test
+Title: Whatstodo
+
+----
+
+Add-position-hint: <p>Write a new position! By posting, you automatically sign this, agree to whatstodo's self-image and confirm that you follow our howtodo.</p>
+
+----
+
+Add-position-success: <p>Thank you for your submission. You should have recevied an email!</p>
+
+----
+
+Add-position-fail: <p>Not successful! Please try again! If the error persists, contact position@whatstodo.design</p>
+
+----
+
+Search-fail: There are no positions or participants with your search term!
+
+----
+
+Favicon: 
+
+----
+
+Description: Cool Website!
 
 ----
 
 Keywords: test
 
+----
+
+Test: test

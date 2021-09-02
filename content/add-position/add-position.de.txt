@@ -1,13 +1,3 @@
 Title: Position Hinzufügen
 
 ----
-
-add_position_hint: Verfasse eine neue Position! Mit der Veröffentlichung unterzeichnest du diese automatisch, erklärst du dich mit dem Selbstverständnis von whatstodo einverstanden und bestätigst, dass du unser Howtodo beachtest.
-
-----
-
-add_position_success: Vielen Dank für deine Nachricht. Wir werden uns schnellstmöglich bei dir melden!
-
-----
-
-add_position_fail: Nicht erfolgreich! Bitte versuche es nochmal! Falls der Fehler bestehen bleibt wende dich an position@whatstodo.design

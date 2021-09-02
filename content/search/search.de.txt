@@ -1,5 +1,1 @@
 Title: Suchergebnisse
-
-----
-
-search_unsuccess: Es gibt keine Positionen oder Teilnehmer mit deinem Suchwort!

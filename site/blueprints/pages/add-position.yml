@@ -1,20 +1,2 @@
 title: Add a Position
 preset: none
-
-fields:
-  headline:
-    label: Hints
-    type: headline
-    numbered: false
-  add_position_hint:
-    label: Allgemein
-    type: writer
-    size: small
-  add_position_success:
-    label: Erfolgreich eingereicht
-    type: writer
-    size: small
-  add_position_fail:
-    label: Einreichung fehlgeschlagen
-    type: writer
-    size: small
