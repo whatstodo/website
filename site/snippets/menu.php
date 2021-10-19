@@ -33,3 +33,7 @@
     <input type="submit" value="&#8629;">
   </form>
 </nav>
+
+<a class="enter-member" href="<?= page('member')->url() ?>">
+  <span>I do that</span>
+</a>
