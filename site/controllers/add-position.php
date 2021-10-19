@@ -47,6 +47,11 @@ return function ($kirby) {
         'to' => 'position@whatstodo.test',
         'subject' => 'New Position: "{{name}}"',
       ]);
+
+    if ($form->success()) {
+      $url = url('home', ['params' => ['hint' => 'add-position-success']]);
+      go($url);
+    }
   }
 
   return compact('form');

@@ -14,7 +14,11 @@ Add-position-fail: <p>Nicht erfolgreich! Bitte versuche es nochmal! Falls der Fe
 
 ----
 
-Search-fail: Es gibt keine Positionen oder Teilnehmer mit deinem Suchwort!
+Search-fail: <p>Es gibt keine Positionen oder Teilnehmer mit deinem Suchwort!</p>
+
+----
+
+Log-out: <p>Du hast dich erfolgreich abgemeldet.</p>
 
 ----
 

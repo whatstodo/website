@@ -5,7 +5,6 @@ tabs:
     label: Seiten
     icon: 📖
     sections:
-
       listed:
         headline: Seiten
         type: pages
@@ -15,7 +14,6 @@ tabs:
     label: Hints
     icon: ℹ️
     fields:
-      
       headlineA:
         label: Position Hinzufügen
         type: headline
@@ -23,17 +21,12 @@ tabs:
       add_position_hint:
         label: Default
         type: writer
-        size: small
       add_position_success:
         label: Erfolgreich
         type: writer
-        size: small
       add_position_fail:
         label: Fehlgeschlagen
         type: writer
-        size: small
-
-      line:
 
       headlineB:
         label: Suche
@@ -41,20 +34,26 @@ tabs:
         numbered: false
       search_fail:
         label: Fehlgeschlagen
-        type: text
-        size: small
+        type: writer
+
+      headlineC:
+        label: Member Bereich
+        type: headline
+        numbered: false
+      log_out:
+        label: Logout
+        type: writer
 
   site_info:
     label: Web Infos
     icon: 💻
     type: fields
     fields:
-
       favicon:
         label: Favicon
         type: files
         max: 1
-        help: "Bild -> png / 512px × 512px / Qualität: 10"
+        help: 'Bild -> png / 512px × 512px / Qualität: 10'
 
       description:
         label: Seitenbeschreibung

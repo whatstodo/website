@@ -5,7 +5,7 @@ if (!$hint) {
   return;
 }
 
-$hintFieldName = str_replace('-', '_', "hint-$hint");
+$hintFieldName = str_replace('-', '_', "$hint");
 $content = $site->content();
 ?>
 

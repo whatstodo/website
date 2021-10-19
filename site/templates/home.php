@@ -1,6 +1,6 @@
 <?php snippet('header'); ?>
 
-<?php snippet('hint', ['default' => 'add-position']); ?>
+<?php snippet('hint'); ?>
 
 <section>
   <ul>

@@ -9,7 +9,7 @@ textarea,
   width: 90%;
   height: 4vh;
   margin-bottom: 1rem;
-  color: black;
+  color: gray;
   font-size: 1rem;
   font-family: g2tgr;
 }
@@ -17,12 +17,12 @@ textarea,
 input,
 textarea {
   border: black solid 1px;
+  color: black;
 }
 
 .error {
   background: rgba(255, 0, 0, 0.3);
   border: black solid 1px;
-  color: red;
 }
 
 .error::placeholder {

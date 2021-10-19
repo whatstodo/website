@@ -1,7 +1,7 @@
 <?php snippet('header'); ?>
 
 <h2><?= $page->title() ?></h2>
-<div><?= $page->add_position_hint() ?></div>
+<?php snippet('hint', ['default' => 'add_position_hint']); ?>
 
 <?php snippet('form', [
   'form' => $form,

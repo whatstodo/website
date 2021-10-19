@@ -14,7 +14,11 @@ Add-position-fail: <p>Not successful! Please try again! If the error persists, c
 
 ----
 
-Search-fail: There are no positions or participants with your search term!
+Search-fail: <p>There are no positions or participants with your search term!</p>
+
+----
+
+Log-out: <p>You have successfully logged out.</p>
 
 ----
 

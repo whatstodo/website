@@ -1,7 +1,10 @@
 <?php snippet('header'); ?>
 
+
+
 <?php if (!$hasResults): ?>
-<h2><?= $page->search_unsuccess()->kirbytext() ?></h2>
+  <?= $url = url('home', ['params' => ['hint' => 'search_fail']]) ?>
+  <?= go($url) ?>
 <?php else: ?>
 
 <?php if ($results['positions']->isNotEmpty()): ?>
